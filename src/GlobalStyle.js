@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', sans-serif;
     width: 100%;
     height: 100%;
-    --primary-color: #f24421;
+    --primary-color: lightblue;
   }
 
   form > div {

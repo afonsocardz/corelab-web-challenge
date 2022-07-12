@@ -6,7 +6,6 @@ export const FlexContainer = styled.div`
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    padding:30px;
     flex-direction: ${({direction}) => direction ? direction : "row"};
     justify-content: ${({justify}) => justify ? justify : "start"};
     align-items: ${({align}) => align ? align : "center"};
