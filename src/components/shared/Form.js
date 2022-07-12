@@ -11,6 +11,7 @@ export default function Form({ children, body, validate, endpoint }) {
     async function sendForm(e) {
         e.preventDefault();
         setIsLoading(true);
+
         const promise = axios.post(API + endpoint, body);
         promise.then(res => {
             validate(res);
@@ -39,8 +40,8 @@ const StyledForm = styled.form`
 
 const ContainerForm = styled.div`
     width: 326px;
-    background-color: white;
-    border-radius: 10%;
+    background-color: #c98d48;
+    border-radius: 10px;
     padding: 15px;
 
 `;

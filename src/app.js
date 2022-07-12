@@ -1,11 +1,15 @@
-import { BrowerRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { GlobalStyle, ResetStyle } from "./GlobalStyle";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
-    <BrowerRouter>
+    <BrowserRouter>
+      <ResetStyle />
+      <GlobalStyle />
       <Routes>
-
+        <Route path={"/"} element={<Home />} />
       </Routes>
-    </BrowerRouter>
+    </BrowserRouter>
   );
 }
